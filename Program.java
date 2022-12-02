@@ -7,9 +7,10 @@ public class Program {
 	static void drawBoard(char board[][]) {
 		
 		for (int i=0; i<board.length; i++) {
+			System.out.print(" ")
 			for (int j=0; j<board[i].length; j++) {
 				if (j != 2) {
-					System.out.print(" " + board[i][j] + " | ");
+					System.out.print(+ board[i][j] + " | ");
 				} else {
 					System.out.println(board[i][j]);
 				}				
